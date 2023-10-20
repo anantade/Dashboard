@@ -19,13 +19,13 @@ import {FaBars , FaTimes} from 'react-icons/fa'
 
 export default function Dashboard() {
   return (
-    <div className="bg-blue-50 p-2 md:flex md:justify-center  md:min-h-screen">
+    <div className="bg-blue-50 p-2 flex md:justify-center  md:min-h-screen">
       <div className=" ">
         {/* Top navbar */}
 
-        <div className="flex  pt-2 pb-2 mr-2 ">
+        <div className="flex bg-black  pt-2 pb-2 mr-2 md:w-auto w-2/5 ">
           {/* sun icon */}
-          <div className="bg-white flex w-52">
+          <div className="bg-white flex w-[190px]">
             <img src={Sun} alt="" className="w-5 ml-2 " />
             <p className="font-inter text-lg  ml-6">Transade</p>
           </div>
@@ -69,7 +69,7 @@ export default function Dashboard() {
           {/* Side nav bar start */}
 
           <div className="col-span-2 bg-white">
-            <div className="w-48">
+            <div className="">
               {/* Dashboard */}
 
               <div className="flex p-4">
@@ -122,7 +122,7 @@ export default function Dashboard() {
           <div className="col-span-10 ">
             <div className="grid md:grid-cols-9 md:gap-4 md:mt-0 mt-4 gap-2">
               {/* Transactions */}
-              <div className="col-span-3 p-2 bg-white">
+              <div className="col-span-3 p-2 bg-black md:w-auto w-2/5">
                 <div className="flex">
                   <div className=" bg-blue-50 rounded-full pl-1 pt-2">
                     <img src={Cart} alt="" className=" " />
@@ -139,7 +139,7 @@ export default function Dashboard() {
                 </div>
               </div>
               {/* Transactions */}
-              <div className="col-span-3 p-2 bg-white">
+              <div className="col-span-3 p-2 bg-black md:w-auto w-2/5">
                 <div className="flex">
                   <div className=" bg-blue-50 rounded-full pl-1 pt-2">
                     <img src={Cart} alt="" className=" " />
@@ -156,7 +156,7 @@ export default function Dashboard() {
                 </div>
               </div>
               {/* Transactions */}
-              <div className="col-span-3 p-2 bg-white">
+              <div className="col-span-3 p-2 bg-black md:w-auto w-2/5">
                 <div className="flex">
                   <div className=" bg-blue-50 rounded-full pl-1 pt-2">
                     <img src={Cart} alt="" className=" " />
@@ -174,7 +174,7 @@ export default function Dashboard() {
               </div>
 
               {/* Graphical part */}
-              <div className="col-span-3 p-2 bg-white">
+              <div className="col-span-3 p-2 bg-black md:w-auto w-2/5">
               <div className="flex ">
                 <div>
                   <p className="text-gray-400 text-sm">100</p>
@@ -190,7 +190,7 @@ export default function Dashboard() {
             </div>
               {/* Graphical part end */}
 
-              <div className="col-span-3 p-2 bg-white">
+              <div className="col-span-3 p-2 bg-black md:w-auto w-2/5">
                 <p className="text-[#545F71] font-bold text-2xl">$ 1893.44</p>
                 <p className="text-gray-400 text-sm">Dollers</p>
                 <div className="flex mt-5">
@@ -198,7 +198,7 @@ export default function Dashboard() {
                   <button className="bg-[#545F71] w-32 text-white rounded-md ml-4">Add Money +</button>
                 </div>
               </div>
-              <div className="col-span-3 p-2 bg-white">
+              <div className="col-span-3 p-2 bg-black md:w-auto w-2/5">
                 <p className="text-[#545F71] font-bold text-2xl">$ 1893.44</p>
                 <p className="text-gray-400 text-sm">Dollers</p>
                 <div className="flex mt-5">
@@ -206,10 +206,11 @@ export default function Dashboard() {
                   <button className="bg-[#545F71] w-32 text-white rounded-md ml-4">Add Money +</button>
                 </div>
               </div>
-                 
-                 {/* Table Layout */}
-               <div className="col-span-9 bg-white md:w-auto  w-1/2 overflow-x-auto">
-                <div className="">
+            </div>
+              
+                {/* Table Layout */}
+                <div className="grid md:grid-cols-3 bg-black md:w-auto  w-2/5 overflow-x-auto mt-5">
+                <div className="col-span-3">
                  <table className=" border-collapse border border-slate-500">
                   <thead>
                     <tr>
@@ -301,8 +302,7 @@ export default function Dashboard() {
                   </table>
                 </div>
                </div>
-            </div>
- 
+
           </div>
         </div>
       </div>
