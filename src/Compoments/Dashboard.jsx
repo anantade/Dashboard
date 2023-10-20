@@ -23,7 +23,7 @@ export default function Dashboard() {
       <div className=" ">
         {/* Top navbar */}
 
-        <div className="flex bg-white  pt-2 pb-2 mr-2 md:w-auto w-2/5 ">
+        <div className="flex bg-blue-50  pt-2 pb-2 mr-2 md:w-auto w-2/5 ">
           {/* sun icon */}
           <div className="bg-white flex w-[190px]">
             <img src={Sun} alt="" className="w-5 ml-2 " />
